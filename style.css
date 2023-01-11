@@ -6,8 +6,15 @@
     box-sizing: border-box;
     font-family: plus Jakarta sans;
 }
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 
-nav {
+}
+header {
     margin: 0 10%;
     margin-bottom: 5%;
     margin-top: 1%;
@@ -21,17 +28,27 @@ nav {
     color: #13183f;
 }
 
-button {
-    padding: 5px 13px;
+.btn {
+    text-decoration: none;
+    background: pink;
+    padding: 7px 15px;
     border-radius: 25px;
+    font-size: .75rem;
     color: #FFFFFF;
-    font-family: plus jakarta sans;
-    font-size: .60rem;
-    border: none;
 }
 
 .btn-1 {
     background: #13183f;
+
+}
+/* .btn-1 a {
+    text-decoration: none;
+    color: #FFFFFF;
+} */
+
+.btn-2 {
+    padding: 10px 15px;
+    background: linear-gradient(#F02AA6, #FF6F48);
 }
 
 /* Styling the hero section */
@@ -39,14 +56,17 @@ button {
 .hero {
     display: flex;
     margin-left: 10%;
-    
+
 }
 
+
+
 .img-1 {
-    height: 70%;
-    max-width: 60%;
-    transform: translate(180px, -200px);
-    
+    width: 650px;
+    transform: translate(200px, -225px);
+
+}
+.image {
 }
 
 .container {
@@ -74,41 +94,70 @@ button {
 /* Styling the grid*/
 
 .grid {
-    /*margin: 0 10%;*/
+    margin-left: 10%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: 
-    ".grid-1 .grid-2 .grid-3"
-    ".grid-4 .grid-5 .grid-6";
+    grid-template-columns: auto auto 1fr;
+    gap: 60px;
 }
 
 .grids {
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
     background: gray;
+    border-radius: 25px;
 }
 
 .grid-1 {
-    grid-area: grid-1;
+    background: linear-gradient(#F02AA6, #FF6F48);
+
 }
 
-.grid-2 {
-    grid-area: grid-2;
+.grid-1 h2 {
+    margin-top: 100px;
+    margin-left: 30px;
+    margin-right: 70px;
+    color: #FFFFFF;
 }
 
-.grid-3 {
-    grid-area: grid-3;
+.grid-u {
+    background: #FFFFFF;
+    box-shadow: 2px 2px lightgray;
 }
 
-.grid-4 {
-    grid-area: grid-4;
+.grid-u h3 {
+    color: #13183F;
+    margin-top: 40px;
 }
 
-.grid-5 {
-    grid-area: grid-5;
+.grid-u p {
+    margin-top: 40px;
+    margin-bottom: 70px;
 }
 
-.grid-6 {
-    grid-area: grid-6;
+.grid-u a {
+    text-decoration: none;
+    color: #F74780;
+    
+}
+
+/* STyling the footer */
+
+footer {
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-between;
+    background: #13183F;
+    height: 20%;
+    align-items: center;
+}
+
+.logo-1 {
+    color: #FFFFFF;
+    margin-left: 10%;
+}
+
+.btn-3 {
+    margin-right: 10%;
+    height: 20%;
+    background: linear-gradient(#4851FF, #F02AA6);
 }
